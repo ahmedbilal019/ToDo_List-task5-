@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+}
+body {
+  background-color: rgb(47, 20, 170);
+  color: white;
+}
+h1 {
+  margin-top: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.taskBg {
+  background-color: rgb(231, 226, 226);
+  color: black;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: left;
+  position: relative;
+  padding: 10px 50px 10px 15px;
+  border: 1px solid rgb(21, 21, 61);
+  border-radius: 7px;
+  box-shadow: 5px 5px 15px 5px rgba(65, 255, 218, 0.55);
+}
+.row {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: left;
+  position: relative;
+  padding: 10px 10px 10px 15px;
+  border-radius: 7px;
+}
+.taskBg div {
+  display: flex;
+  align-items: center;
+}
+.taskBg .taskText {
+  flex: 1;
+}
+.taskBg .done .taskText {
+  text-decoration: line-through;
+  opacity: 0.3;
+  flex: 1;
+}
+.taskNumber {
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+  color: white;
+  background-color: black;
+}
+.taskBg .iconsWrap {
+  position: absolute;
+  top: 20%;
+  transform: translate(-50%);
+  right: 15px;
+  width: auto;
+  display: inline-block;
+}
+.taskBg .iconsWrap span {
+  display: inline-block;
+  margin: 0px 10px;
+  cursor: pointer;
+  color: rgb(22, 180, 22);
+}
+.taskBg .iconsWrap span:hover {
+  color: rgb(6, 75, 6);
+}
+#update-btn {
+  margin-right: 10px;
+}
+@media screen and (max-width: 480px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #addTask-btn {
+    margin: 10px auto;
+    display: flex;
+  }
+  #update-control {
+    display: flex;
+    margin: 10px auto;
+  }
+  .taskBg .iconsWrap {
+    margin-top: 15px;
+    position: relative;
+    top: 20%;
+    transform: translate(-50%);
+    right: 50%;
+    left: 50%;
+    width: auto;
+    display: inline-block;
+  }
+  #update-btn {
+    margin-right: 5px;
+  }
+}
